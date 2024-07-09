@@ -1,0 +1,44 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "title": "bracelets"
+    },
+    {
+      "id": 2,
+      "title": "charms"
+    },
+    {
+      "id": 3,
+      "title": "earrings"
+    },
+    {
+      "id": 4,
+      "title": "necklaces"
+    },
+    {
+      "id": 5,
+      "title": "rings"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "catId": 5,
+      "title": "Alber Ring",
+      "img": "src/assets/alber-ring.png"
+    },
+    {
+      "id": 2,
+      "catId": 1,
+      "title": "Emerald Doubles cut",
+      "img": "src/assets/emerald-bracelet.png"
+    },
+    {
+      "id": 3,
+      "catId": 5,
+      "title": "Alber Ring",
+      "img": "../assets/alber-ring.png"
+    }
+  ]
+}

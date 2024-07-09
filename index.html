@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+    <link rel="stylesheet" href="./src/index.css" />
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <header>
+      <div class="navbar">
+        <h1>Lustra</h1>
+        <nav>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+            fill="none"
+          >
+            <g clip-path="url(#clip0_97_17)">
+              <path
+                d="M26.6666 23.3332C27.1802 23.3334 27.674 23.5313 28.0458 23.8857C28.4175 24.2402 28.6386 24.724 28.6633 25.2371C28.688 25.7501 28.5143 26.2529 28.1784 26.6414C27.8424 27.0299 27.3698 27.2743 26.8586 27.3238L26.6666 27.3332H5.33325C4.81963 27.3329 4.32579 27.1351 3.95407 26.7806C3.58235 26.4262 3.36124 25.9423 3.33655 25.4293C3.31187 24.9163 3.48551 24.4134 3.82149 24.0249C4.15746 23.6364 4.63003 23.3921 5.14125 23.3425L5.33325 23.3332H26.6666ZM26.6666 13.9998C27.197 13.9998 27.7057 14.2106 28.0808 14.5856C28.4559 14.9607 28.6666 15.4694 28.6666 15.9998C28.6666 16.5303 28.4559 17.039 28.0808 17.4141C27.7057 17.7891 27.197 17.9998 26.6666 17.9998H5.33325C4.80282 17.9998 4.29411 17.7891 3.91904 17.4141C3.54397 17.039 3.33325 16.5303 3.33325 15.9998C3.33325 15.4694 3.54397 14.9607 3.91904 14.5856C4.29411 14.2106 4.80282 13.9998 5.33325 13.9998H26.6666ZM26.6666 4.6665C27.197 4.6665 27.7057 4.87722 28.0808 5.25229C28.4559 5.62736 28.6666 6.13607 28.6666 6.6665C28.6666 7.19694 28.4559 7.70565 28.0808 8.08072C27.7057 8.45579 27.197 8.6665 26.6666 8.6665H5.33325C4.80282 8.6665 4.29411 8.45579 3.91904 8.08072C3.54397 7.70565 3.33325 7.19694 3.33325 6.6665C3.33325 6.13607 3.54397 5.62736 3.91904 5.25229C4.29411 4.87722 4.80282 4.6665 5.33325 4.6665H26.6666Z"
+                fill="#000000"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_97_17">
+                <rect width="32" height="32" fill="black" />
+              </clipPath>
+            </defs>
+          </svg>
+        </nav>
+      </div>
+
+      <div class="hero">
+        <h1>Shop</h1>
+      </div>
+    </header>
+
+    <main>
+      <aside>
+        <h2>Products by Category</h2>
+        <ul class="filter">
+          <li>All</li>
+          <li>Rings</li>
+          <li>Earrings</li>
+          <li>Charms</li>
+          <li>Necklace</li>
+          <li>Bracelets</li>
+        </ul>
+      </aside>
+    </main>
+
+    <div class="product-card">
+      <div class="product-card__image">
+        <img src="./src/assets/alber-ring.png" alt="" />
+      </div>
+      <div class="product-card__content">
+        <div class="product-card__content-top">
+          <h4 class="product-card__content-title">Alber Ring</h4>
+          <div class="rating">
+            <span>4.5</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              viewBox="0 0 18 18"
+              fill="none"
+            >
+              <path
+                d="M10.2957 2.58313L11.6155 5.24466C11.7955 5.61515 12.2755 5.97052 12.6805 6.03857L15.0727 6.43931C16.6025 6.6964 16.9625 7.81545 15.8601 8.91937L14.0003 10.7945C13.6853 11.1121 13.5129 11.7245 13.6103 12.1631L14.1428 14.4844C14.5627 16.3217 13.5953 17.0325 11.983 16.0722L9.74077 14.7339C9.33585 14.4919 8.66842 14.4919 8.25592 14.7339L6.0137 16.0722C4.40887 17.0325 3.43399 16.3141 3.85394 14.4844L4.38638 12.1631C4.48387 11.7245 4.31139 11.1121 3.99642 10.7945L2.13663 8.91937C1.04175 7.81545 1.39421 6.6964 2.92404 6.43931L5.31628 6.03857C5.71373 5.97052 6.19368 5.61515 6.37366 5.24466L7.6935 2.58313C8.41342 1.13896 9.58327 1.13896 10.2957 2.58313Z"
+                fill="#EBB651"
+                stroke="#EBB651"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="product-card__content-bottom">
+          <p class="product-card__content-price">$500,000</p>
+          <a class="cart" href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M8 16H15.2632C19.7508 16 20.4333 13.1808 21.261 9.06908C21.4998 7.88311 21.6192 7.29013 21.3321 6.89507C21.045 6.5 20.4947 6.5 19.3941 6.5H6"
+                stroke="#141B34"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <path
+                d="M8 16L5.37873 3.51493C5.15615 2.62459 4.35618 2 3.43845 2H2.5"
+                stroke="#141B34"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <path
+                d="M8.88 16H8.46857C7.10522 16 6 17.1513 6 18.5714C6 18.8081 6.1842 19 6.41143 19H17.5"
+                stroke="#141B34"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M10.5 22C11.3284 22 12 21.3284 12 20.5C12 19.6716 11.3284 19 10.5 19C9.67157 19 9 19.6716 9 20.5C9 21.3284 9.67157 22 10.5 22Z"
+                stroke="#141B34"
+                stroke-width="1.5"
+              />
+              <path
+                d="M17.5 22C18.3284 22 19 21.3284 19 20.5C19 19.6716 18.3284 19 17.5 19C16.6716 19 16 19.6716 16 20.5C16 21.3284 16.6716 22 17.5 22Z"
+                stroke="#141B34"
+                stroke-width="1.5"
+              /></svg
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pagination">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="32"
+        height="32"
+        viewBox="0 0 20 20"
+        fill="none"
+      >
+        <path
+          d="M9.02391 9.99959L13.1487 14.1244L11.9702 15.3029L6.66683 9.99959L11.9702 4.69629L13.1487 5.87481L9.02391 9.99959Z"
+          fill="#BDBDBD"
+        />
+      </svg>
+      <span>1</span><span class="active">2</span><span>...</span><span>10</span>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="32"
+        height="32"
+        viewBox="0 0 20 20"
+        fill="none"
+      >
+        <path
+          d="M10.9761 10.0004L6.85132 5.87558L8.02983 4.69708L13.3332 10.0004L8.02983 15.3037L6.85132 14.1252L10.9761 10.0004Z"
+          fill="#121212"
+        />
+      </svg>
+    </div>
+    <footer class="footer">
+      <h1>Lustra</h1>
+
+      <p class="copy">&copy; Copyright 2024, All Rights Reserved by Lustra</p>
+    </footer>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
