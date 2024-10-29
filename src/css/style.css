@@ -185,7 +185,7 @@
     margin: 0 auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     position: absolute;
-    top: 100vw;
+    top: 50vh;
     border-radius: 0.5rem;
     left: 0;
     right: 0;
@@ -486,6 +486,8 @@
   .product-list {
     padding-block-end: 1rem;
     overflow-x: scroll;
+    scrollbar-color: #658c4a #e7e7e7;
+    scrollbar-width: 16px;
     display: flex;
     align-items: flex-start;
     gap: 1rem;
