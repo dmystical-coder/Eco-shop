@@ -5,7 +5,11 @@
 }
 
 @media (320px <= width <= 640px) {
+  .header {
+    width: 100vw;
+  }
   .banner {
+    width: 100%;
     padding: 0.75rem;
     display: flex;
     justify-content: center;
@@ -42,7 +46,7 @@
   }
 
   .logo > img {
-    width: 100%;
+    max-width: 100%;
   }
 
   .btn-group {
@@ -177,13 +181,18 @@
     line-height: 1.25rem; /* 142.857% */
   }
   .popup-container {
+    width: 95%;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     position: absolute;
-    top: 50vw;
+    top: 100vw;
+    border-radius: 0.5rem;
     left: 0;
     right: 0;
   }
 
   .pop-up {
+    width: 100%;
     position: relative;
     border-radius: 0.5rem;
     display: flex;
@@ -193,7 +202,10 @@
     gap: 1rem;
     flex: 1 0 0;
     background: url("../assets/images/image\ 1005.png") #ffffff;
+    background-size: cover;
+    background-position: center;
     background-blend-mode: darken;
+    background-repeat: no-repeat;
   }
   .pop-up img {
     position: absolute;
@@ -252,15 +264,53 @@
 
   .category-banner {
     position: relative;
-    /* height: 350px; */
-    width: 350px;
+    height: 15rem;
+    width: 100%;
     align-self: stretch;
     border-radius: 0.5rem;
     background: #658c4a;
   }
-  .category-banner img {
+  .clothing {
     border-radius: 0.5rem;
-    width: 100%;
+    flex-shrink: 0;
+    background: url("../assets/images/category-one.png") lightgray 50% / cover
+      no-repeat;
+    max-width: 100%;
+    height: inherit;
+  }
+  .bedding {
+    border-radius: 0.5rem;
+    flex-shrink: 0;
+    background: url("../assets/images/category-two.png") lightgray 50% / cover
+      no-repeat;
+    max-width: 100%;
+    height: inherit;
+  }
+
+  .accessories {
+    border-radius: 0.5rem;
+    flex-shrink: 0;
+    background: url("../assets/images/category-three.png") lightgray 50% / cover
+      no-repeat;
+    max-width: 100%;
+    height: inherit;
+  }
+
+  .furnitures {
+    border-radius: 0.5rem;
+    flex-shrink: 0;
+    background: url("../assets/images/category-four.png") lightgray 50% / cover
+      no-repeat;
+    max-width: 100%;
+    height: inherit;
+  }
+  .home-goods {
+    border-radius: 0.5rem;
+    flex-shrink: 0;
+    background: url("../assets/images/category-five.png") lightgray 50% / cover
+      no-repeat;
+    max-width: 100%;
+    height: inherit;
   }
   .category-banner a {
     position: absolute;
