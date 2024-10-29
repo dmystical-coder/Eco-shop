@@ -580,12 +580,32 @@
   }
 
   .commitment {
+    position: relative;
     display: flex;
-    width: 23.4375rem;
     padding: 5rem 0.9375rem 5rem 1rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 2.5rem;
+    background: url("../assets/images/pexels-tim-douglas-6567651\ 1.png")
+      lightgray 0px -100.292px / 100% 160% no-repeat;
+    height: 25.9375rem;
+  }
+  .bg {
+    position: absolute;
+    top: 0;
+    background: rgba(101, 140, 74, 0.9);
+    width: 23.4375rem;
+    height: 25.9375rem;
+  }
+  .commitment p {
+    z-index: 99;
+    color: #ffffff;
+    text-align: center;
+    font-family: "Libre Baskerville", serif;
+    font-size: 1.25rem;
+  }
+  .commitment img {
+    z-index: 99;
   }
 }
