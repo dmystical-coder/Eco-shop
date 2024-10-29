@@ -1,10 +1,9 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 @media (320px <= width <= 640px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
   .header {
     width: 100vw;
   }
@@ -120,6 +119,7 @@
   }
   .menu > a {
     display: block;
+    width: 100%;
     color: #262626;
     text-decoration: none;
     /* text-xs/Semibold */
@@ -139,7 +139,7 @@
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
-    width: 375px;
+    width: 100%;
     height: 700px;
     background: url("../assets/images/hero-image.jpg") rgba(255, 255, 255, 0.7);
     background-position: center;
@@ -331,5 +331,114 @@
     font-size: 0.75rem;
     font-weight: 600;
     line-height: 1rem; /* 133.333% */
+  }
+  .most-wanted {
+    background: #ffefe5;
+    display: flex;
+    padding: 2.5rem 0.9375rem 2.5rem 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    align-self: stretch;
+  }
+  .heading h1 {
+    align-self: stretch;
+    color: #333333;
+    text-align: center;
+    font-family: "Libre Baskerville", serif;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .heading p {
+    align-self: stretch;
+    color: #666666;
+    text-align: center;
+    /* Body Small Regular */
+    font-family: "Inter", sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.25rem; /* 142.857% */
+  }
+
+  .product-grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .product {
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .product-img {
+    display: flex;
+    width: 10.25rem;
+    height: 10.25rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .product-img-one {
+    background: url("../assets/images/alpine.png") lightgray 50% / cover
+      no-repeat;
+  }
+
+  .product-img-two {
+    background: url("../assets/images/women-sole.png") lightgray 0px -32.8px / 100%
+      140% no-repeat;
+  }
+
+  .product-img-three {
+    background: url("../assets/images/patterned-basket.png") lightgray -1.959px 0px /
+      102.389% 100% no-repeat;
+  }
+  .product-img-four {
+    background: url("../assets/images/meliora.png") lightgray 50% / cover
+      no-repeat;
+  }
+
+  .product p {
+    align-self: stretch;
+    color: #333333;
+    /* Body Small Semibold */
+    font-family: "Inter", sans-serif;
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.25rem; /* 142.857% */
+  }
+  .price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+  }
+  .price span:first-of-type {
+    color: #658c4a;
+    /* Body Xtra Small Semibold */
+    font-family: "Inter", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1rem; /* 133.333% */
+    align-self: stretch;
+  }
+  .price span:last-of-type {
+    color: #999999;
+    font-family: "Inter", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1rem; /* 133.333% */
+    text-decoration: line-through;
+    align-self: stretch;
   }
 }
