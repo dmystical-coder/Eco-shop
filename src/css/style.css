@@ -5,9 +5,6 @@
 }
 
 @media (320px <= width <= 640px) {
-  #container {
-    /* padding-inline: 1rem; */
-  }
   .banner {
     padding: 0.75rem;
     display: flex;
@@ -107,6 +104,9 @@
     align-items: flex-start;
     align-self: stretch;
   }
+  .hidden {
+    display: none;
+  }
   .menu {
     display: flex;
     padding: 0.5rem 1rem;
@@ -115,6 +115,7 @@
     align-self: stretch;
   }
   .menu > a {
+    display: block;
     color: #262626;
     text-decoration: none;
     /* text-xs/Semibold */
@@ -250,11 +251,15 @@
 
   .category-banner {
     position: relative;
-    background: url("../assets/images/category-one.png") lightgray 50% / cover
-      no-repeat;
-    height: 15rem;
+    /* height: 344px; */
+    width: 344px;
     align-self: stretch;
     border-radius: 0.5rem;
+    background: #658c4a;
+  }
+  .category-banner img {
+    border-radius: 0.5rem;
+    width: 100%;
   }
   .category-banner a {
     position: absolute;
