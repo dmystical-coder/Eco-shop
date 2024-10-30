@@ -4,6 +4,10 @@
     margin: 0;
     box-sizing: border-box;
   }
+
+  body {
+    position: relative;
+  }
   .header {
     width: 100vw;
   }
@@ -786,5 +790,118 @@
     align-items: center;
     border-radius: 2.5rem;
     background: var(--Primary, #658c4a);
+  }
+
+  .footer {
+    position: relative;
+    display: flex;
+    padding: 10rem 0.9375rem 2.5rem 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background: #f5f5f5;
+  }
+
+  .footer-bg {
+    position: absolute;
+    height: 40.25rem;
+    width: 100%;
+    bottom: 6rem;
+  }
+
+  .brown-bg {
+    height: 45rem;
+    overflow-y: hidden;
+    flex-shrink: 0;
+    background: url("../assets/images/brown-texture\ 1.png") lightgray 50% /
+      cover no-repeat;
+    background-blend-mode: color-dodge;
+  }
+  .brown-bg img {
+    width: 100%;
+    z-index: 0;
+    height: inherit;
+    mix-blend-mode: darken;
+  }
+  .badge {
+    position: absolute;
+    right: auto;
+    left: auto;
+    top: 2.5rem;
+    fill: var(--Primary, #658c4a);
+    box-shadow: 0px 2.667px 2.667px 0px rgba(255, 255, 255, 0.15) inset,
+      0px -2.667px 2.667px 0px rgba(0, 0, 0, 0.15) inset;
+  }
+
+  .footer-menu-grid {
+    z-index: 20;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .footer-menu > h3 {
+    align-self: stretch;
+    color: var(--Primary, #658c4a);
+    /* Body Normal Semibold */
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem; /* 150% */
+  }
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    align-self: stretch;
+  }
+
+  .footer-links a {
+    color: var(--Grey-600, #333);
+    text-decoration: none;
+    /* Body Xtra Small Semibold */
+    font-family: "Inter", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1rem; /* 133.333% */
+  }
+
+  .divider {
+    background: #333333;
+    width: 21.5rem;
+    height: 0.0625rem;
+    z-index: 20;
+  }
+
+  .socials-container {
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    align-self: stretch;
+  }
+
+  .socials-container > span {
+    color: var(--Grey-600, #333);
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 0.75rem;
+    line-height: 1rem; /* 133.333% */
+  }
+
+  .sticky-chat {
+    z-index: 999;
+    bottom: 5vh;
+    left: 85%;
+    position: sticky;
+    border-radius: 0.5rem 0.5rem 0rem 0.5rem;
+    background: var(--Primary, #658c4a);
+    display: inline-flex;
+    padding: 0.75rem;
+    align-items: flex-start;
+    gap: 0.5rem;
   }
 }
