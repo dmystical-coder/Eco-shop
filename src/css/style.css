@@ -1,12 +1,634 @@
-@media (320px <= width <= 640px) {
+/* Desktop Layout */
+
+@media (1024px <= width <= 2560px) {
   * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
   }
 
-  body {
+  .search-field {
+    display: none;
+  }
+  .menu-icon {
+    display: none;
+  }
+
+  .header {
+    width: 100%;
+  }
+  .banner {
+    width: 100%;
+    display: flex;
+    padding: 1rem 7.5rem;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.5rem;
+    background: linear-gradient(90deg, #658c4a 0%, #89bc68 100%);
+  }
+  .banner > span {
+    color: #ffffff;
+    text-align: center;
+    /* Body Xtra Small Semibold */
+    font-family: "Inter", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1rem; /* 133.333% */
+  }
+  .banner > img {
+    display: none;
+  }
+
+  .navbar {
+    display: flex;
+    padding: 1rem 3.75rem;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+  }
+
+  .logo {
+    display: flex;
+    height: 3rem;
+    width: 10rem;
+    align-items: center;
+  }
+  .logo > img {
+    max-width: 100%;
+  }
+
+  .search-field-desktop {
+    width: 55rem;
+    align-self: flex-end;
+    border-radius: 2.5rem;
+    border: 1px solid var(--Grey-200, #ccc);
+    display: flex;
+    padding: 0.5rem 1rem;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .search-field-desktop #search {
+    border: none;
+    outline: none;
+    width: 100%;
+    flex: 1 0 0;
+    color: var(--Grey-400, #999);
+    /* Body Normal Regular */
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem; /* 150% */
+  }
+
+  .btn-group {
+    align-self: flex-end;
+    display: flex;
+    width: 7.5rem;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .btn-group > button {
+    background-color: #ffffff;
+    border: none;
+    outline: none;
+  }
+
+  .btn-group > button img {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .menu-list {
+    list-style: none;
+    border-bottom: 1px solid var(--Primary, #658c4a);
+    background: var(--White, #fff);
+    display: flex;
+    padding: 1rem 7.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .menu {
+    display: flex;
+    padding: 0.5rem 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .menu > a {
+    text-decoration: none;
+    color: var(--Grey-600, #333);
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem; /* 150% */
+  }
+
+  .hero {
+    display: none;
+  }
+
+  .hero-desktop {
+    background: var(--White, #fff);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .hero-content {
+    display: flex;
+    max-width: 35rem;
+    padding: 5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    flex-shrink: 0;
+  }
+  .hero-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    width: 45rem;
+    height: 30rem;
+    flex-shrink: 0;
+  }
+  .hero-img > img {
+    max-width: 100%;
+  }
+
+  .hero-content > h1 {
+    color: var(--Grey-600, #333);
+    text-align: center;
+    font-family: "Libre Baskerville", serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+  }
+
+  .hero-content > p {
+    color: var(--Grey-500, #666);
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.75rem; /* 140% */
+  }
+
+  .hero-content > a {
+    border-radius: 2.5rem;
+    background: var(--Primary, #658c4a);
+    display: flex;
+    padding: 0.75rem 1.5rem;
+    justify-content: center;
+    align-items: center;
+    color: var(--White, #fff);
+    text-align: center;
+    text-decoration: none;
+    /* Body Large Semibold */
+    font-family: "Inter", sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.75rem; /* 140% */
+  }
+
+  .popup-container {
     position: relative;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: absolute;
+    top: 10vh;
+    border-radius: 1rem;
+    background: #fff;
+    display: flex;
+    width: 54.5rem;
+    padding-right: 1.5rem;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .popup-container > img {
+    width: 27.25rem;
+    height: 33.75rem;
+    flex-shrink: 0;
+  }
+
+  .pop-up {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    flex: 1 0 0;
+  }
+  .pop-up img {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+  }
+  .pop-up h6 {
+    align-self: stretch;
+    color: var(--Grey-600, #333);
+    text-align: center;
+    font-family: "Libre Baskerville", serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .pop-up p {
+    color: #333333;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    align-self: stretch;
+    /* Body Large Regular */
+    font-size: 1.25rem;
+    line-height: 1.75rem; /* 140% */
+  }
+  .pop-up a {
+    color: #658c4a;
+    text-align: center;
+    /* Body Small Semibold */
+    font-family: "Inter", sans-serif;
+    z-index: 99;
+    position: relative;
+    text-decoration: none;
+    border-radius: 2.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.75rem; /* 140% */
+    display: flex;
+    padding: 0.75rem 1.5rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .rect {
+    z-index: -1;
+    width: 2.5rem;
+    height: 2.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 2.5rem;
+    background: #e7cec0;
+  }
+
+  .highlights {
+    max-width: 100%;
+    display: flex;
+    padding: 5rem 3.5rem;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .highlights > h1 {
+    color: var(--Primary, #658c4a);
+    font-family: "Libre Baskerville", serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+
+  .category-banner {
+    position: relative;
+    border-radius: 0.5rem;
+    background: var(--Primary, #658c4a);
+    width: 12.5rem;
+    height: 12.5rem;
+    flex-shrink: 0;
+  }
+
+  .clothing {
+    border-radius: 0.5rem;
+    flex-shrink: 0;
+    background: url("../assets/images/category-one.png") lightgray 50% / cover
+      no-repeat;
+    max-width: 100%;
+    height: inherit;
+  }
+  .bedding {
+    border-radius: 0.5rem;
+    flex-shrink: 0;
+    background: url("../assets/images/category-two.png") lightgray 50% / cover
+      no-repeat;
+    max-width: 100%;
+    height: inherit;
+  }
+
+  .accessories {
+    order: 4;
+    border-radius: 0.5rem;
+    flex-shrink: 0;
+    background: url("../assets/images/category-three.png") lightgray 50% / cover
+      no-repeat;
+    max-width: 100%;
+    height: inherit;
+  }
+
+  .furnitures {
+    border-radius: 0.5rem;
+    flex-shrink: 0;
+    background: url("../assets/images/category-four.png") lightgray 50% / cover
+      no-repeat;
+    max-width: 100%;
+    height: inherit;
+  }
+  .home-goods {
+    order: 2;
+    border-radius: 0.5rem;
+    flex-shrink: 0;
+    background: url("../assets/images/category-five.png") lightgray 50% / cover
+      no-repeat;
+    max-width: 100%;
+    height: inherit;
+  }
+  .category-banner a {
+    border-radius: 2.5rem;
+    text-align: center;
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.25rem; /* 142.857% */
+    display: inline-flex;
+    padding: 0.5rem 1rem;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+    background: #333333;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Inter", sans-serif;
+  }
+
+  .most-wanted {
+    background: #658c4a;
+    display: flex;
+    padding: 5rem 3.75rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+  }
+
+  .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .heading h1 {
+    align-self: stretch;
+    color: var(--White, #fff);
+    text-align: center;
+    font-family: "Libre Baskerville", serif;
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  .heading p {
+    align-self: stretch;
+    color: var(--Grey-100, #e6e6e6);
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.75rem; /* 140% */
+  }
+
+  .product-grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+
+  .product {
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .product-img {
+    border-radius: 0.5rem;
+    display: flex;
+    width: 19.5rem;
+    height: 19.5rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .product-img-one {
+    background: url("../assets/images/alpine.png") lightgray 50% / cover
+      no-repeat;
+  }
+
+  .product-img-two {
+    background: url("../assets/images/women-sole.png") lightgray 0px -32.8px / 100%
+      140% no-repeat;
+  }
+
+  .product-img-three {
+    background: url("../assets/images/patterned-basket.png") lightgray -1.959px 0px /
+      102.389% 100% no-repeat;
+  }
+  .product-img-four {
+    background: url("../assets/images/meliora.png") lightgray 50% / cover
+      no-repeat;
+  }
+
+  .product p {
+    align-self: stretch;
+    color: #ffffff;
+    /* Body Small Semibold */
+    font-family: "Inter", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.75rem; /* 142.857% */
+  }
+  .price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+  }
+  .price span:first-of-type {
+    color: #ffffff;
+    /* Body Xtra Small Semibold */
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem; /* 133.333% */
+    align-self: stretch;
+  }
+  .price span:last-of-type {
+    color: #ffffff;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1rem; /* 133.333% */
+    text-decoration: line-through;
+    align-self: stretch;
+  }
+
+  .new-arrivals {
+    display: flex;
+    padding: 5rem 3.75rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+  }
+
+  .heading2 {
+    display: none;
+  }
+
+  .heading2-desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    align-self: stretch;
+  }
+  .heading2-d {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+    flex: 1 0 0;
+  }
+
+  .heading2-d > h1 {
+    color: var(--Grey-600, #333);
+    /* Heading 3 */
+    font-family: "Libre Baskerville", serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+
+  .heading2-d > p {
+    color: var(--Grey-500, #666);
+    /* Body Normal Regular */
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem; /* 150% */
+  }
+
+  .arrows {
+    display: inline-flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  .arrows > img {
+    cursor: pointer;
+  }
+
+  .product-list {
+    display: none;
+  }
+  .product-list-desktop {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+  }
+
+  .product-list-desktop .product .product-img {
+    display: flex;
+    width: 19.5rem;
+    height: 19.5rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .product-list-desktop .product .product-img-one {
+    background: url("../assets/images/lollygagger-lounge-chair-1.png") lightgray
+      50% / cover no-repeat;
+  }
+  .product-list-desktop .product .product-img-two {
+    background: url("../assets/images/lollygagger-lounge-chair-2.png") lightgray
+      50% / cover no-repeat;
+  }
+  .product-list-desktop .product .product-img-three {
+    background: url("../assets/images/nisswa-loveseat.png") lightgray 50% /
+      cover no-repeat;
+  }
+  .product-list-desktop .product .product-img-four {
+    background: url("../assets/images/outdoor-chaise.png") lightgray 50% / cover
+      no-repeat;
+  }
+  .product-list-desktop .product .product-img-five {
+    background: url("../assets/images/recycled-cubby-bench.png") lightgray 50% /
+      cover no-repeat;
+  }
+
+  .product-list-desktop .product .product-img-six {
+    background: url("../assets/images/recycled-table.png") lightgray 50% / cover
+      no-repeat;
+  }
+
+  .product-list-desktop .product .product-img-seven {
+    background: url("../assets/images/recycled-dining-chair.png") lightgray 50% /
+      cover no-repeat;
+  }
+  .product-list-desktop .product .product-img-eight {
+    background: url("../assets/images/recycled-round-end-table.png") lightgray
+      50% / cover no-repeat;
+  }
+  .product-list-desktop .product > p {
+    align-self: stretch;
+    color: var(--Grey-600, #333);
+    font-family: "Inter", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.75rem; /* 140% */
+  }
+  span.price {
+    color: var(--Primary, #658c4a);
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5rem; /* 150% */
+  }
+
+  .new-arrivals a {
+    border-radius: 2.5rem;
+    background: var(--Primary, #658c4a);
+    display: flex;
+    padding: 0.75rem 1.5rem;
+    justify-content: center;
+    align-items: center;
+    color: var(--White, #fff);
+    text-align: center;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.75rem; /* 140% */
+  }
+
+  .hidden {
+    display: none;
+  }
+}
+
+/* Mobile Layout */
+
+@media (320px <= width <= 640px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .search-field-desktop {
+    display: none;
   }
   .header {
     width: 100vw;
@@ -136,6 +758,10 @@
   .main {
     background: #f5f5f5;
   }
+  .hero-desktop {
+    display: none;
+  }
+
   .hero {
     display: flex;
     padding: 5rem 2.5rem;
@@ -193,6 +819,10 @@
     border-radius: 0.5rem;
     left: 0;
     right: 0;
+  }
+
+  .popup-container > img {
+    display: none;
   }
 
   .pop-up {
@@ -264,6 +894,10 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+  }
+
+  .highlights > h1 {
+    display: none;
   }
 
   .category-banner {
@@ -464,6 +1098,10 @@
     align-self: stretch;
   }
 
+  .heading2-desktop {
+    display: none;
+  }
+
   .heading2 h1 {
     align-self: stretch;
     color: #333333;
@@ -487,6 +1125,11 @@
     align-items: center;
     align-self: stretch;
   }
+
+  .product-list-desktop {
+    display: none;
+  }
+
   .product-list {
     padding-block-end: 1rem;
     overflow-x: scroll;

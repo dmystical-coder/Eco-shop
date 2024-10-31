@@ -5,6 +5,8 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="./src/assets/icons/badge.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -17,6 +19,7 @@
 <body>
 
   <div class="popup-container">
+    <img src="./src/assets/images/image 1005 (1).png" alt="">
     <div class="pop-up">
       <img class="close" src="./src/assets/icons/close.svg" alt="close icon" />
       <h6>Get 15% off</h6>
@@ -36,6 +39,10 @@
     <div class="navbar">
       <div class="logo">
         <img src="./src/assets/images/logo.png" alt="ECO shop logo" />
+      </div>
+      <div class="search-field-desktop">
+        <img src="./src/assets/icons/search.svg" alt="search icon" />
+        <input type="search" name="search" id="search" placeholder="Search here..." />
       </div>
       <div class="btn-group">
         <button>
@@ -93,7 +100,23 @@
       <a href="">Learn More</a>
     </div>
 
+    <div class="hero-desktop">
+      <div class="hero-content">
+        <h1>Healthy cutlery, healthy body</h1>
+        <p>
+          Upgrade your dining experience and begin your path to a healthy you
+          right now.
+        </p>
+        <a href="">Learn More</a>
+      </div>
+      <div class="hero-img">
+        <img src="./src/assets/images/hero-image.jpg" alt="">
+      </div>
+    </div>
+
     <div class="highlights">
+      <h1>Category for
+        you</h1>
       <div class="category-banner">
         <div class="clothing"></div>
 
@@ -169,6 +192,28 @@
         <h1>New Arrival</h1>
         <p>Be the first to have the first-class product</p>
       </div>
+      <div class="heading2-desktop">
+        <div class="heading2-d">
+          <h1>New Arrival</h1>
+          <p>Be the first to have the first-class product</p>
+        </div>
+        <div class="arrows">
+          <svg style="fill: #999999; width: 2rem; height: 2rem; cursor: pointer;" class="prev"
+            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path id="prevColor"
+              d="M10.1003 6.46026C10.3932 6.16737 10.3932 5.69249 10.1003 5.3996C9.80744 5.10671 9.33256 5.10671 9.03967 5.3996L2.96967 11.4696C2.82902 11.6103 2.75 11.801 2.75 11.9999C2.75 12.1988 2.82902 12.3896 2.96967 12.5303L9.03967 18.6003C9.33256 18.8932 9.80744 18.8932 10.1003 18.6003C10.3932 18.3074 10.3932 17.8325 10.1003 17.5396L5.31073 12.75H20.5C20.9142 12.75 21.25 12.4142 21.25 12C21.25 11.5858 20.9142 11.25 20.5 11.25H5.31059L10.1003 6.46026Z"
+              fill="#999999" />
+          </svg>
+
+
+          <svg style="fill:#333333; width: 2rem; height: 2rem; cursor: pointer;" class="next"
+            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path id="nextColor"
+              d="M14.9603 5.3996C14.6674 5.10671 14.1926 5.10671 13.8997 5.3996C13.6068 5.69249 13.6068 6.16737 13.8997 6.46026L18.6894 11.25H3.5C3.08579 11.25 2.75 11.5858 2.75 12C2.75 12.4142 3.08579 12.75 3.5 12.75H18.6893L13.8997 17.5396C13.6068 17.8325 13.6068 18.3074 13.8997 18.6003C14.1926 18.8932 14.6674 18.8932 14.9603 18.6003L21.0303 12.5303C21.171 12.3896 21.25 12.1988 21.25 11.9999C21.25 11.801 21.171 11.6103 21.0303 11.4696L14.9603 5.3996Z"
+              fill="#333333" />
+          </svg>
+        </div>
+      </div>
 
       <div class="product-list-frame">
         <div class="product-list">
@@ -200,6 +245,66 @@
             <span class="price"> Rp259.000 </span>
           </div>
 
+          <!-- five -->
+          <div class="product">
+            <div class="product-img product-img-five"></div>
+            <p>Recycled Cubby Bench</p>
+            <span class="price"> Rp1.159.900 </span>
+          </div>
+
+          <!-- six -->
+          <div class="product">
+            <div class="product-img product-img-six"></div>
+            <p>Fresh Air Recycled Table</p>
+            <span class="price"> Rp999.000 </span>
+          </div>
+
+          <!-- seven -->
+          <div class="product">
+            <div class="product-img product-img-seven"></div>
+            <p>Emin Recycled Dining Chair</p>
+            <span class="price"> Rp259.000 </span>
+          </div>
+
+          <!-- eight -->
+          <div class="product">
+            <div class="product-img product-img-eight"></div>
+            <p>Satellite Recycled Round End Table</p>
+            <span class="price"> Rp259.000 </span>
+          </div>
+        </div>
+
+        <div class="product-list-desktop" id="listOne" data-ani="wobble">
+          <!-- one -->
+          <div class="product">
+            <div class="product-img product-img-one"></div>
+            <p>Lollygagger Recycled Lounge Chair</p>
+            <span class="price"> Rp699.900 </span>
+          </div>
+
+          <!-- two -->
+          <div class="product">
+            <div class="product-img product-img-two"></div>
+            <p>Lollygagger Recycled Lounge Chair</p>
+            <span class="price"> Rp999.900 </span>
+          </div>
+
+          <!-- three -->
+          <div class="product">
+            <div class="product-img product-img-three"></div>
+            <p>Nisswa Recycled Loveseat</p>
+            <span class="price"> Rp259.000 </span>
+          </div>
+
+          <!-- four -->
+          <div class="product">
+            <div class="product-img product-img-four"></div>
+            <p>Lollygagger Recycled Outdoor Chaise</p>
+            <span class="price"> Rp259.000 </span>
+          </div>
+        </div>
+
+        <div class="product-list-desktop hidden" id="listTwo" data-ani="wobble">
           <!-- five -->
           <div class="product">
             <div class="product-img product-img-five"></div>
