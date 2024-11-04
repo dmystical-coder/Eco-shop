@@ -17,7 +17,7 @@ close.addEventListener('click', () => {
     popup.style.display = 'none';
 });
 menuIcon.addEventListener('click', () => {
-    menuList.classList.toggle('hidden');
+    menuList.classList.toggle('hide');
 })
 next.addEventListener('click', () => {
     console.log(next.style.fill)
@@ -26,8 +26,8 @@ next.addEventListener('click', () => {
         window.setTimeout(function () {
             listOne.classList.remove('animated', ani1);
         }, 3000);
-        listOne.classList.add('hidden');
-        listTwo.classList.remove('hidden');
+        listOne.classList.add('hide');
+        listTwo.classList.remove('hide');
         listTwo.classList.add('animated', ani2);
         window.setTimeout(function () {
             listTwo.classList.remove('animated', ani2);
@@ -45,8 +45,8 @@ prev.addEventListener('click', () => {
         window.setTimeout(function () {
             listTwo.classList.remove('animated', ani1);
         }, 3000);
-        listTwo.classList.add('hidden');
-        listOne.classList.remove('hidden');
+        listTwo.classList.add('hide');
+        listOne.classList.remove('hide');
         listOne.classList.add('animated', ani1);
         window.setTimeout(function () {
             listOne.classList.remove('animated', ani1);
