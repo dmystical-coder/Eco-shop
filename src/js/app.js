@@ -17,7 +17,7 @@ close.addEventListener('click', () => {
     popup.style.display = 'none';
 });
 menuIcon.addEventListener('click', () => {
-    menuList.classList.toggle('hide');
+    menuList.classList.toggle('hidden');
 })
 next.addEventListener('click', () => {
     console.log(next.style.fill)
